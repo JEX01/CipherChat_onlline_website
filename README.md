@@ -46,7 +46,7 @@ encrypted-chat/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CipherChat.git
+https://github.com/JEX01/CipherChat.git
 cd CipherChat
 ```
 
