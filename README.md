@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛡️ CipherChat
 
 CipherChat is a browser-based **End-to-End Encrypted (E2EE)** real-time chat application built with **React**, **Node.js**, **Socket.IO**, and the **WebCrypto API**.
@@ -180,3 +181,6 @@ Browser B
 ## 📄 License
 
 This project was developed for educational purposes to demonstrate client-side encryption using the WebCrypto API.
+=======
+# CipherChat
+>>>>>>> c4b020b9fc94eef505bde0ab963b28e576e92cbe
