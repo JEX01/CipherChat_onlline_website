@@ -1,8 +1,6 @@
 # 🛡️ CipherChat
 
-CipherChat is a browser-based **End-to-End Encrypted (E2EE)** real-time chat application built with **React**, **Node.js**, **Socket.IO**, and the **WebCrypto API**.
-
-Messages are encrypted **inside the browser** using **AES-256-GCM** before transmission. The server acts only as a relay and **never has access to plaintext messages, passwords, or encryption keys**.
+CipherChat is a browser-based **End-to-End Encrypted (E2EE)** real-time chat application built with **React**, **Node.js**, **Socket.IO**, and the **WebCrypto API**. Messages are encrypted **inside the browser** using **AES-256-GCM** before transmission. The server acts only as a relay and **never has access to plaintext messages, passwords, or encryption keys**.
 
 ---
 
@@ -20,10 +18,10 @@ Messages are encrypted **inside the browser** using **AES-256-GCM** before trans
 
 ## 🛠 Tech Stack
 
-| Frontend     | Backend           | Crypto               |
-| ------------ | ----------------- | -------------------- |
-| React + Vite | Node.js + Express | WebCrypto API        |
-| CSS          | Socket.IO         | AES-256-GCM + PBKDF2 |
+| Frontend      | Backend            | Crypto                |
+| ------------- | ------------------ | ---------------------- |
+| React + Vite  | Node.js + Express  | WebCrypto API           |
+| CSS           | Socket.IO          | AES-256-GCM + PBKDF2    |
 
 ---
 
@@ -46,7 +44,7 @@ encrypted-chat/
 Clone the repository:
 
 ```bash
-https://github.com/JEX01/CipherChat.git
+git clone https://github.com/JEX01/CipherChat.git
 cd CipherChat
 ```
 
@@ -72,9 +70,7 @@ On first launch, the server automatically generates a local self-signed SSL cert
 
 ## 🌐 LAN Access
 
-Connect all devices to the same Wi-Fi network.
-
-Open the HTTPS address displayed in the terminal:
+Connect all devices to the same Wi-Fi network. Open the HTTPS address displayed in the terminal:
 
 ```
 https://YOUR_LOCAL_IP:3001
@@ -107,8 +103,7 @@ A second user joins with the same credentials and can securely exchange messages
 If another user joins using an incorrect password, decryption fails and CipherChat displays:
 
 ```
-Unable to decrypt message.
-Encryption key mismatch.
+Unable to decrypt message. Encryption key mismatch.
 ```
 
 ---
@@ -127,18 +122,13 @@ Encryption key mismatch.
 
 ```text
 Browser A
-   │
-AES-256 Encrypt
-   │
- HTTPS / WSS
-   │
-Node.js Server
-(Ciphertext Only)
-   │
- HTTPS / WSS
-   │
-AES-256 Decrypt
-   │
+   │  AES-256 Encrypt
+   │  HTTPS / WSS
+   ▼
+Node.js Server (Ciphertext Only)
+   │  HTTPS / WSS
+   ▼
+   │  AES-256 Decrypt
 Browser B
 ```
 
@@ -180,6 +170,3 @@ Browser B
 ## 📄 License
 
 This project was developed for educational purposes to demonstrate client-side encryption using the WebCrypto API.
-=======
-# CipherChat
->>>>>>> c4b020b9fc94eef505bde0ab963b28e576e92cbe
